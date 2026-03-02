@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,81 +13,87 @@
     <header>
         <div class="logo">🌟 English Adventure 🌟</div>
         <nav>
-            <button onclick="showSection('map-section')">🗺️ Map</button>
-            <button onclick="showSection('certificate-section')">🏆 Certificate</button>
-            <button onclick="showSection('teacher-section')" class="teacher-btn">👩‍🏫 Teacher's Guide</button>
+            <button onclick="showSection('map-section')">🗺️ Mapa</button>
+            <button onclick="showSection('certificate-section')">🏆 Certificado</button>
+            <button onclick="showSection('teacher-section')" class="teacher-btn">👩‍🏫 Guia do Professor</button>
         </nav>
     </header>
 
     <main>
         <!-- Home: Mapa de Unidades -->
         <section id="map-section" class="active">
-            <h1>🎒 Map of Units! Let's Explore!</h1>
+            <h1>🎒 Mapa das Unidades! Vamos Explorar!</h1>
             
-            <!-- Module 1 -->
-            <h2 class="module-title">Module 1: Foundations</h2>
+            <!-- Imagem do Mapa Principal -->
+            <div class="main-map-container">
+                <img src="imagens/mapa.jpg" alt="Mapa da Aventura" class="main-map-image">
+            </div>
+
+            <!-- Módulo 1 -->
+            <h2 class="module-title">Módulo 1: Fundações</h2>
             <div class="grid-container">
                 <div class="card bg-yellow" onclick="showSection('unit1-section')">
-                    <img src="https://via.placeholder.com/150/FFD700/FFFFFF?text=Welcome" alt="Crianças acenando e sorrindo">
+                    <img src="imagens/unidade1.jpg" alt="Sala de aula com a professora">
                     <h3>Unit 1: Welcome Back!</h3>
                 </div>
-                <div class="card bg-blue">
-                    <img src="https://via.placeholder.com/150/87CEEB/FFFFFF?text=Family" alt="Uma família feliz no parque">
+                <div class="card bg-blue" onclick="showSection('unit2-section')">
+                    <img src="imagens/unidade2.jpg" alt="Árvore genealógica da família">
                     <h3>Unit 2: My Amazing Family</h3>
                 </div>
-                <div class="card bg-green">
-                    <img src="https://via.placeholder.com/150/32CD32/FFFFFF?text=School" alt="Sala de aula colorida">
+                <div class="card bg-green" onclick="showSection('unit3-section')">
+                    <img src="imagens/unidade3.jpg" alt="Mesa com mochila e material escolar">
                     <h3>Unit 3: School is Fun!</h3>
                 </div>
-                <div class="card bg-pink">
-                    <img src="https://via.placeholder.com/150/FF69B4/FFFFFF?text=Clothes" alt="Armário com roupas coloridas">
+                <div class="card bg-pink" onclick="showSection('unit4-section')">
+                    <img src="imagens/unidade4.jpg" alt="Varal com roupas coloridas">
                     <h3>Unit 4: Colorful Clothes</h3>
                 </div>
                 <div class="card bg-orange">
-                    <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=Routine" alt="Relógio e criança escovando os dentes">
+                    <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=Routine" alt="Minha rotina">
                     <h3>Unit 5: My Day-to-Day</h3>
                 </div>
             </div>
 
-            <!-- Module 2 -->
-            <h2 class="module-title">Module 2: Exploring the World</h2>
+            <!-- Módulo 2 -->
+            <h2 class="module-title">Módulo 2: Explorando o Mundo</h2>
             <div class="grid-container">
                 <div class="card bg-yellow">
-                    <img src="https://via.placeholder.com/150/FFD700/FFFFFF?text=Food" alt="Maçã, banana, cenoura e brócolis">
+                    <img src="https://via.placeholder.com/150/FFD700/FFFFFF?text=Food" alt="Comida">
                     <h3>Unit 6: Time to Eat!</h3>
                 </div>
                 <div class="card bg-blue">
-                    <img src="https://via.placeholder.com/150/87CEEB/FFFFFF?text=Animals" alt="Leão e macaco na selva">
+                    <img src="https://via.placeholder.com/150/87CEEB/FFFFFF?text=Animals" alt="Animais">
                     <h3>Unit 8: Animal Kingdom</h3>
                 </div>
                 <div class="card bg-green">
-                    <img src="https://via.placeholder.com/150/32CD32/FFFFFF?text=House" alt="Casa de dois andares com jardim">
+                    <img src="https://via.placeholder.com/150/32CD32/FFFFFF?text=House" alt="Casa">
                     <h3>Unit 9: My Dream House</h3>
                 </div>
             </div>
 
-            <!-- Module 3 -->
-            <h2 class="module-title">Module 3: Communication & Skills</h2>
+            <!-- Módulo 3 -->
+            <h2 class="module-title">Módulo 3: Comunicação e Habilidades</h2>
             <div class="grid-container">
                 <div class="card bg-orange">
-                    <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=City" alt="Mapa da cidade com hospital e cinema">
+                    <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=City" alt="Cidade">
                     <h3>Unit 11: In the City</h3>
                 </div>
                 <div class="card bg-pink" onclick="showSection('unit13-section')">
-                    <img src="https://via.placeholder.com/150/FF69B4/FFFFFF?text=Feelings" alt="Emojis de emoções">
+                    <img src="https://via.placeholder.com/150/FF69B4/FFFFFF?text=Feelings" alt="Emoções">
                     <h3>Unit 13: How do you feel?</h3>
                 </div>
             </div>
         </section>
 
-        <!-- Unidade 1: Welcome Back (Exemplo de Interatividade) -->
+        <!-- Unidade 1: Welcome Back -->
         <section id="unit1-section" class="hidden content-section">
-            <button class="back-btn" onclick="showSection('map-section')">🔙 Back to Map</button>
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
+            <img src="imagens/unidade1.jpg" alt="Classroom" class="unit-banner">
             <h1>Unit 1: Welcome Back! 👋</h1>
             
             <div class="interactive-box">
-                <h2>🔊 Vocabulary Spotlight</h2>
-                <p>Click to hear the words!</p>
+                <h2>🔊 Foco no Vocabulário</h2>
+                <p>Clique para ouvir as palavras em inglês!</p>
                 <div class="btn-group">
                     <button class="audio-btn" onclick="playAudio('Teacher')">👩‍🏫 Teacher</button>
                     <button class="audio-btn" onclick="playAudio('Friend')">🧑‍🤝‍🧑 Friend</button>
@@ -96,45 +102,91 @@
             </div>
 
             <div class="interactive-box grammar">
-                <h2>🧩 Grammar Corner: Verb To Be</h2>
-                <p>We use the verb <b>to be</b> to talk about who we are!</p>
+                <h2>🧩 Cantinho da Gramática: Verb To Be</h2>
+                <p>Nós usamos o verbo <b>to be</b> para falar sobre quem somos ou como nos sentimos!</p>
                 <div class="grammar-visual">
                     <div class="grammar-card">I ➔ <b>am</b></div>
                     <div class="grammar-card">You ➔ <b>are</b></div>
                 </div>
-                <p><em>💡 Hint for Unit 2: We add <b>'s</b> to a name to show possession (e.g., <b>Leo's ball ⚽</b>)</em></p>
             </div>
 
             <div class="interactive-box practice">
-                <h2>✍️ Practice Time: Fill in the blanks</h2>
+                <h2>✍️ Hora de Praticar: Preencha os espaços</h2>
                 <p>1. I <input type="text" id="q1" placeholder="am/is/are"> 10 years old.</p>
                 <p>2. You <input type="text" id="q2" placeholder="am/is/are"> a great student!</p>
-                <button onclick="checkAnswers()" class="action-btn">Check Answers!</button>
+                <button onclick="checkAnswers()" class="action-btn">Verificar Respostas!</button>
                 <p id="practice-feedback" class="feedback"></p>
             </div>
 
-            <div class="interactive-box listening">
-                <h2>🎧 Listening Lab</h2>
-                <div class="media-placeholder" onclick="playAudio('Hi! I am Sarah. I am 8 years old. This is my friend, Toby. He is a dog!')">
-                    ▶️ Play Audio: "Sarah & Toby"
-                </div>
-                <p><b>Question:</b> How old is Sarah?</p>
-                <button onclick="alert('Sarah is 8 years old! 🎉')" class="action-btn small">Show Answer</button>
-            </div>
-
             <div class="interactive-box game">
-                <h2>🎮 Game Zone: "The Name Game"</h2>
-                <p>Can you type a name that starts with the letter <b>"A"</b>?</p>
-                <input type="text" id="game-input" placeholder="Type a name here...">
-                <button onclick="playNameGame()" class="action-btn small">Play!</button>
+                <h2>🎮 Zona de Jogos: "The Name Game"</h2>
+                <p>Você consegue escrever um nome que comece com a letra <b>"A"</b>?</p>
+                <input type="text" id="game-input" placeholder="Escreva o nome aqui...">
+                <button onclick="playNameGame()" class="action-btn small">Jogar!</button>
+            </div>
+        </section>
+
+        <!-- Unidade 2: Family -->
+        <section id="unit2-section" class="hidden content-section">
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
+            <img src="imagens/unidade2.jpg" alt="Family Tree" class="unit-banner">
+            <h1>Unit 2: My Amazing Family 👨‍👩‍👧‍👦</h1>
+            
+            <div class="interactive-box">
+                <h2>🔊 Vocabulário da Família</h2>
+                <p>Conheça os membros da família na nossa Family Tree (Árvore Genealógica):</p>
+                <div class="btn-group">
+                    <button class="audio-btn" onclick="playAudio('Mother')">👩 Mother / Mom</button>
+                    <button class="audio-btn" onclick="playAudio('Father')">👨 Father / Dad</button>
+                    <button class="audio-btn" onclick="playAudio('Brother')">👦 Brother</button>
+                    <button class="audio-btn" onclick="playAudio('Sister')">👧 Sister</button>
+                    <button class="audio-btn" onclick="playAudio('Baby')">👶 Baby</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unidade 3: School -->
+        <section id="unit3-section" class="hidden content-section">
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
+            <img src="imagens/unidade3.jpg" alt="School Objects" class="unit-banner">
+            <h1>Unit 3: School is Fun! 🎒</h1>
+            
+            <div class="interactive-box">
+                <h2>🔊 Objetos Escolares</h2>
+                <p>O que tem em cima da mesa? Clique para descobrir:</p>
+                <div class="btn-group">
+                    <button class="audio-btn" onclick="playAudio('Backpack')">🎒 Backpack</button>
+                    <button class="audio-btn" onclick="playAudio('Notebook')">📓 Notebook</button>
+                    <button class="audio-btn" onclick="playAudio('Eraser')">🧽 Eraser</button>
+                    <button class="audio-btn" onclick="playAudio('Ruler')">📏 Ruler</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unidade 4: Clothes -->
+        <section id="unit4-section" class="hidden content-section">
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
+            <img src="imagens/unidade4.jpg" alt="Colorful Clothes" class="unit-banner">
+            <h1>Unit 4: My Colorful Clothes 👗</h1>
+            
+            <div class="interactive-box">
+                <h2>🔊 Vocabulário de Roupas</h2>
+                <p>Veja as roupas no varal e aprenda os nomes em inglês:</p>
+                <div class="btn-group">
+                    <button class="audio-btn" onclick="playAudio('T-shirt')">👕 T-shirt</button>
+                    <button class="audio-btn" onclick="playAudio('Pants')">👖 Pants</button>
+                    <button class="audio-btn" onclick="playAudio('Dress')">👗 Dress</button>
+                    <button class="audio-btn" onclick="playAudio('Shoes')">👟 Shoes</button>
+                    <button class="audio-btn" onclick="playAudio('Hat')">👒 Hat</button>
+                </div>
             </div>
         </section>
 
         <!-- Unidade 13: Emoções -->
         <section id="unit13-section" class="hidden content-section">
-            <button class="back-btn" onclick="showSection('map-section')">🔙 Back to Map</button>
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
             <h1>Unit 13: How do you feel? 🎭</h1>
-            <p>Click on the faces to learn the feelings!</p>
+            <p>Como você se sente? Clique nos rostos para aprender as emoções em inglês!</p>
             <div class="emotion-board">
                 <div class="emotion-card" onclick="playAudio('I am Happy!')">
                     <span class="emoji">😁</span>
@@ -157,32 +209,32 @@
 
         <!-- Área do Professor -->
         <section id="teacher-section" class="hidden content-section teacher-guide">
-            <button class="back-btn" onclick="showSection('map-section')">🔙 Back to Map</button>
-            <h1>📚 Teacher's Guide</h1>
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
+            <h1>📚 Guia do Professor</h1>
             <div class="guide-content">
-                <h2>General Tips for Online Teaching</h2>
+                <h2>Dicas Gerais para Ensino Online</h2>
                 <ul>
-                    <li><b>Visuals are Key:</b> Use realia, flashcards, and screen sharing.</li>
-                    <li><b>Encourage Speaking:</b> Create a safe and fun environment. Focus on fluency first.</li>
-                    <li><b>Movement Breaks:</b> Incorporate short physical activities (e.g., "Simon Says").</li>
+                    <li><b>O Visual é Essencial:</b> Use as imagens da plataforma para associar o vocabulário aos objetos reais.</li>
+                    <li><b>Incentive a Fala (Speaking):</b> Crie um ambiente divertido. Foque na fluência antes de corrigir cada errinho.</li>
+                    <li><b>Pausas para Movimento:</b> Incorpore atividades físicas curtas como "Simon Says" (O Mestre Mandou).</li>
                 </ul>
-                <h2>Unit-Specific Tips</h2>
-                <p><b>Unit 1:</b> Speaking Mission - Encourage students to use gestures and facial expressions.</p>
-                <p><b>Unit 13:</b> "Emotion Charades" is excellent for non-verbal communication and vocabulary review.</p>
+                <h2>Dicas Específicas por Unidade</h2>
+                <p><b>Unit 1:</b> Speaking Mission - Incentive os alunos a usarem gestos para "Teacher" e "Friend".</p>
+                <p><b>Unit 13:</b> O jogo das "Mímicas das Emoções" é excelente para revisar o vocabulário sem usar o português.</p>
             </div>
         </section>
 
         <!-- Certificado de Conclusão -->
         <section id="certificate-section" class="hidden content-section">
-            <button class="back-btn" onclick="showSection('map-section')">🔙 Back to Map</button>
+            <button class="back-btn" onclick="showSection('map-section')">🔙 Voltar ao Mapa</button>
             <div class="certificate">
                 <h1>🏆 Certificate of Achievement 🏆</h1>
                 <h2>English Adventure: Level 1</h2>
-                <p>This certifies that</p>
-                <input type="text" placeholder="Type Student's Name Here" class="student-name" id="cert-name">
-                <p>has successfully completed the Elementary course, demonstrating a solid understanding of basic English vocabulary, grammar, and communication skills.</p>
-                <button class="action-btn print-btn" onclick="window.print()">🖨️ Print Certificate</button>
-                <p class="congrats">Congratulations, English Star! ⭐</p>
+                <p>Este certificado comprova que</p>
+                <input type="text" placeholder="Escreva o nome do aluno aqui" class="student-name" id="cert-name">
+                <p>completou com sucesso o curso Elementar, demonstrando um ótimo entendimento do vocabulário, gramática e comunicação em Inglês.</p>
+                <button class="action-btn print-btn" onclick="window.print()">🖨️ Imprimir Certificado</button>
+                <p class="congrats">Parabéns, English Star! ⭐</p>
             </div>
         </section>
     </main>
